@@ -348,3 +348,52 @@
     color: #FFFFFF;
 }
 
+
+// POSSIBILITY ==================================
+
+
+.possibility {
+    background-color: $c-bg1;
+    padding: 140px 0 170px;
+
+    @media screen and (max-width: 700px) {
+        padding: 70px 0;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 35px 0 50px;
+    }
+}
+
+.possibility__text {
+    margin-bottom: 65px;
+    max-width: 600px;
+
+    @media screen and (max-width: 700px) {
+        margin-bottom: 30px;
+    }
+}
+
+.possibility__companies {
+    display: flex;
+    @media screen and (max-width: 450px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.possibility__company + .possibility__company {
+    margin-left: 40px;
+}
+
+.possibility__company.possibility__company--kazpost {
+    margin-left: 20px;
+
+    @media screen and (max-width: 450px) {
+        margin-top: 30px;
+    }
+}
+
+
+// COMFORT ==================================
+
