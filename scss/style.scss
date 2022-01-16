@@ -397,3 +397,53 @@
 
 // COMFORT ==================================
 
+
+.comfort {
+    background-color: $c-bg2;
+   
+}
+
+.comfort__inner {
+    background-image: url(../images/comfort-img.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 145px 0;
+
+    @media screen and (max-width: 960px) {
+        background-size: 50%;
+    }
+
+    @media screen and (max-width: 700px) {
+        background: none;
+        padding: 70px 0;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 35px 0;
+    }
+}
+
+.comfort__text {
+    margin-bottom: 50px;
+    max-width: 565px;
+
+    @media screen and (max-width: 700px) {
+        margin-bottom: 25px;
+    }
+}
+
+.comfort__btn {
+    background-color: #212A38;
+    border-radius: 10px;
+    min-width: 260px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: lighten(#212A38, 5) ;
+    }
+
+    &:active {
+        background-color: lighten(#212A38, 10) ;
+    }
+}
+
