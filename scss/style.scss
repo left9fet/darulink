@@ -591,3 +591,112 @@
     }
 }
 
+
+// UPDATES ==================================
+
+
+.updates {
+    padding: 145px 0 115px;
+    background-color: $c-bg2;
+
+    @media screen and (max-width: 700px) {
+        padding: 70px 0 40px;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 35px 0 15px;
+    }
+}
+
+.updates__text {
+    max-width: 565px;
+    margin-bottom: 25px;
+}
+
+.socials {
+    display: flex;
+
+    @media screen and (max-width: 500px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }    
+}
+
+.socials__item {
+    @media screen and (max-width: 500px) {
+        width: 30%;        
+        margin-bottom: 20px;
+    }
+}
+
+.socials__item + .socials__item {
+    margin-left: 40px;
+
+    @media screen and (max-width: 500px) {
+        margin-left: 0;
+    }
+}
+
+.socials__link {
+    display: inline-block;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    display: flex;
+    transition: 0.3s;
+
+    @media screen and (max-width: 500px) {
+    }
+
+    &--telegram {
+        background-color: #2F89CE;
+
+        &:hover {
+            background-color: darken(#2F89CE, 10);
+        }
+
+        &:active {
+            background-color: darken(#2F89CE, 20);
+        }
+    }
+    &--vk {
+        background-color: #7294C7;
+
+        &:hover {
+            background-color: darken(#7294C7, 10);
+        }
+
+        &:active {
+            background-color: darken(#7294C7, 20);
+        }
+    }
+    &--instagram {
+        background: linear-gradient(43.94deg, #EEA054 16.16%, #D64763 50.11%, #B62A99 83.68%);
+
+        &:hover {
+            // background: linear-gradient(43.94deg, darken(#EEA054, 5) 16.16%, darken(#D64763, 5) 50.11%, darken(#B62A99, 5) 83.68%);
+            opacity: 0.8;
+        }
+
+        &:active {
+            // background: linear-gradient(43.94deg, darken(#EEA054, 10) 16.16%, darken(#D64763, 10) 50.11%, darken(#B62A99, 10) 83.68%);
+            opacity: 0.7;
+        }
+    }
+    &--facebook {
+        background-color: #4E6297;
+
+        &:hover {
+            background-color: darken(#4E6297, 10);
+        }
+
+        &:active {
+            background-color: darken(#4E6297, 20);
+        }
+    }
+}
+
+.socials__img {
+    margin: auto;
+}
+
