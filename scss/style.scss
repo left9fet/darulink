@@ -447,3 +447,147 @@
     }
 }
 
+
+// PLANS ==================================
+
+
+.plans {
+    background-color: $c-bg1;
+    padding: 110px 0 170px;
+
+    @media screen and (max-width: 700px) {
+        padding: 70px 0;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 35px 0 45px;
+    }
+}
+
+.plans__text {
+    margin-bottom: 50px;
+    max-width: 515px;
+
+    @media screen and (max-width: 900px) {
+        margin-bottom: 25px;
+    }
+}
+
+.plans__items {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -10px;
+
+    @media screen and (max-width: 900px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.plans__item {
+    font-family: 'Mont', sans-serif;
+    margin: 0 10px;
+    background: #273140;
+    border-radius: 15px;
+    padding: 50px 25px;
+    color: #717E92;
+
+    @media screen and (max-width: 900px) {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 640px) {
+        width: 100%;
+    }
+}
+
+.plans__item-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.plans__item-subtitle {
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.plans__list {
+    margin-bottom: 40px;
+}
+
+.plans__list-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-left: 15px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: currentColor;
+        left: 0;
+        top: 10px;
+    }
+
+    &--disabled {
+        color: #3B485A;
+    }
+}
+
+.plans__list-item + .plans__list-item {
+    margin-top: 6px;
+}
+
+.plans__btn {
+    width: 100%;
+    color: #ffffff;
+    transition: 0.3s;
+
+    &--violet {
+        background-color: #6A7395;
+        
+        &:hover {
+            background-color: darken(#6A7395, 10);
+        }
+
+        &:active {
+            background-color: darken(#6A7395, 15);
+        }
+    }
+
+    &--green {
+        background-color: #6A9590;
+        
+        &:hover {
+            background-color: darken(#6A9590, 10);
+        }
+
+        &:active {
+            background-color: darken(#6A9590, 15);
+        }
+    }
+
+    &--brown {
+        background-color: #95936A;
+        
+        &:hover {
+            background-color: darken(#95936A, 10);
+        }
+
+        &:active {
+            background-color: darken(#95936A, 15);
+        }
+    }
+}
+
