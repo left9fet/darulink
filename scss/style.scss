@@ -264,7 +264,7 @@
 
 .header__link-phone {
     &::before {
-        background-image: url(../images/icons/phone-icon.png);
+        background-image: url(../images/icons/phone-icon.webp);
     }
 }
 
@@ -272,7 +272,7 @@
     margin-left: 25px;
 
     &::before {
-        background-image: url(../images/icons/mail-icon.png);
+        background-image: url(../images/icons/mail-icon.webp);
     }
 
     @media screen and (max-width: 450px) {
@@ -404,7 +404,7 @@
 }
 
 .comfort__inner {
-    background-image: url(../images/comfort-img.png);
+    background-image: url(../images/comfort-img.webp);
     background-repeat: no-repeat;
     background-position: right bottom;
     padding: 145px 0;
